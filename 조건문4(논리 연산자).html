@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+//&&는 and의 의미로 둘다 true일때만 true이다
+    if(true && true){
+        console.log("true");
+    }
+    
+    if(true && false){
+        console.log("true");
+    }
+    
+    if(false && false){
+        console.log("true");
+    }
+
+
+
+//||는 or의 의미로 둘중 하나만 true여도 true가 된다
+    if(true || true){
+        console.log("true");
+    }
+    
+    if(true || false){
+        console.log("true");
+    }
+    
+    if(false || false){
+        console.log("true");
+    }
+
+
+
+    var id=prompt("아이디를 입력해주세요");
+    
+    if(id==="GW" || id==="GW2" || id==="GW3"){
+        alert('아이디가 일치합니다');
+    }else{
+        alert("아이디가 일치하지 않습니다");
+    }
+
+
+    
+    
+//    !(부정)
+//    부정이기때문에 !true는 false가 됨
+    if(!true && !true){
+        console.log("! : false");
+    }
+    
+//    부정이기때문에 !false는 true가 됨
+    if(!false && !false){
+        console.log("! : true")
+    }
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
