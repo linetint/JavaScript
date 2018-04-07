@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+//출력:return
+//    return의 역할
+//    1. return은 함수를 종료시킨다(뒤에 나오는 코드는 실행되지 않는다)
+//    2. return뒤에 있는 값을 이 함수의 출력값으로 반환한다
+    
+    function get_member1(){
+        return 'GW';
+    }
+    
+    function get_member2(){
+        return 'GW2';
+    }
+    
+//    이렇게 실행한 결과는 GW3이다
+//    그 이유는 return을 만나면 그 뒤에 코드는 실행하지 않기 때문이다
+    function get_member3(){
+        return 'GW3';
+        return 'GW4';
+        return 'GW5';
+        return 'GW6';
+    }
+
+
+    console.log(get_member1());
+    console.log(get_member2());
+    console.log(get_member3());
+
+
+
+
+//입력
+//    여기서 arg는 매개변수, 파라미터라고 부른다
+//    밑에서부터 전달하는 1,2는 인자라고 부른다
+    function get_argument(arg){
+        return arg;
+    }
+    
+    console.log(get_argument(1));
+    console.log(get_argument(2));
+
+
+    function get_argument2(arg1,arg2){
+        return arg1+arg2;
+    }
+    
+    console.log(get_argument2(7,7));
+    console.log(get_argument2(2,3));
+    console.log(get_argument2(5,10));
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
