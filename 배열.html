@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+//변수는 하나의 변수에 하나의 데이터만 저장되지만 배열은 하나의 변수에 여러개의 데이터를 저장할수있다
+var member=['철수','영수','희정'];
+    
+console.log(member);
+    
+console.log(member[0]);
+console.log(member[1]);
+console.log(member[2]);
+
+
+
+ 
+
+    function get_color1(){
+        return 'red';
+    }
+    
+    function get_color2(){
+        return 'blue';
+    }
+    
+    function get_color3(){
+        return 'green';
+    }
+    
+//함수는 매개변수를 여러개 입력받아도 결국엔 하나의 리턴값(결과)만을 만드는데
+//배열은 이러한 함수의 한계를 극복할수 있다
+
+
+    console.log(get_color1());
+    console.log(get_color2());
+    console.log(get_color3());
+    
+//    리턴값을 배열형태로 넣었기때문에 여러개의 값을 가져올수 있다
+    function get_colors(){
+        return ['red','blue','green'];
+    }
+    
+    var colors=get_colors();
+    
+//    console.log(get_colors());
+//    console.log(get_colors()[0]);
+//    console.log(get_colors()[1]);
+//    console.log(get_colors()[2]);
+    
+    console.log(colors);
+    console.log(colors[0]);
+    console.log(colors[1]);
+    console.log(colors[2]);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
