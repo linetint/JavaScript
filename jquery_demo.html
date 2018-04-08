@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+   <script src="jquery.js"></script>
+
+</head>
+<body>
+
+<ul class="list">
+    <li>apple</li>
+    <li>apple</li>
+    <li>apple</li>
+    <li>apple</li>
+</ul>
+
+<input type="button" id="change_button" value="change">
+
+<script>
+
+//    $는 jquery명령어를 의미함
+//    위에 jquery의 파일을 라이브러리로 가져왔기때문에 jquery명령어를 쓸수 있는 것임
+//    $('.list li').text('banana');
+    
+//    change라는 버튼을 만든후 그 버튼의 아이디값을 지정후 해당 버튼을 가져와서 클릭했을때 함수가 실행되게 한다
+//    함수의 내용은 위에 apple을 orange로 바꾼다
+    $('#change_button').click(function(){
+        
+        $('.list li').text('orange');
+        
+    });
+    
+
+</script>
+
+</body>
+
+</html>
