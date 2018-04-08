@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+
+    var grades={
+        
+        'list':{'first':10, 'second':20, 'third':30},
+        'list2':{'fourth':40, 'fifth':50, 'sixth':60},
+        'show':function func(){
+//            console.log(this);
+//            console.log(this.list);
+//            console.log(this.list2);
+//            여기서 this는 이 this가 소속되어있는 함수의 부모인 grades를 가르킨다
+//            결국 this는 grades라는 것이다
+            
+            for(var key in this.list){
+                console.log(key, this.list[key]);
+//                this.list[key]는 grades.list["first"]랑 같은 말이다
+            }
+            
+        },
+        
+    }
+    
+    console.log(grades);
+    console.log(grades.list);
+    console.log(grades.list2);
+    
+    console.log(grades.list.first);
+    console.log(grades["list"]["second"]);
+    console.log(grades["list2"]["fifth"]);
+    
+    grades.show();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

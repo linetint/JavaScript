@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+
+    var arr=['a','b','c'];
+    
+    console.log(arr);
+    console.log(arr.length);
+    
+    for(var i=0; i<arr.length; i++){
+        console.log(arr[i]);
+    }
+
+
+    var color={'red':'10','blue':'20','green':'30'};
+    
+    console.log(color);
+    console.log(color.length);
+    console.log(color.red);
+    console.log(color.blue);
+    console.log(color.green);
+    console.log(color["red"]);
+    console.log(color["blue"]);
+    console.log(color["green"]);
+    
+    
+//    for in 문
+//    for(key in 객체명){
+//        
+//    }
+    for(var key in color){
+//        document.write("★key : "+key+", ★value : "+color[key]+"<br />");
+        document.write("<li>★key : "+key+", ★value : "+color[key]+"</li>");
+    }
+//    color[key]가 아닌 color.key로 하면 벨류값을 가져오지 못함
+
+
+
+
+
+
+    var arr_color=['red','blue','green'];
+
+    console.log(arr_color);
+    console.log(arr_color[0]);
+    console.log(arr_color[1]);
+    console.log(arr_color[2]);
+    
+    for(var key in arr_color){
+//        document.write("<li>"+key);
+        document.write("<li>"+arr_color[key]);
+    }
+    
+    
+    
+//    배열의 벨류를 불러오는 방법
+//    color[0],color[1],color[2] 이런식
+    
+//    객체의 벨류를 불러오는 방법
+//    color.a, color.b, color.c
+//    color["a"],color["b"],color["c"]
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
