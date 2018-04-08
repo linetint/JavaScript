@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+var i=5;
+    
+    function a(){
+        var i=10;
+        b();
+    }
+    
+    
+//이 함수가 생성됐을때 당시의 i의 값을 찾아서 정의하는 것이지
+//이 함수가 실행되고 있는 시점에서 i의 값을 찾아서 정의하지 않는다
+    
+//이런것을 정적 유효범위라고 한다    
+    function b(){
+        document.write(i);
+    }
+
+a();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

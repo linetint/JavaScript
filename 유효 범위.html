@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+//전역변수:전 지역에서 접근가능한 변수
+//지역변수:특정 지역에서만 접근가능한 변수
+    
+    
+var vscope='global';
+    
+//함수안에 정의되어있는 vscope은 지역변수이고 함수밖에 정의되어있는 vscope은 전역변수이다    
+    function fscope(){
+        var vscope='local';
+        console.log(vscope);
+    }
+
+    fscope();
+    
+    function fscope2(){
+        var lv='local variables';
+        console.log(lv);
+    }
+
+    fscope2();
+    
+    console.log(vscope);
+//    console.log(lv); 
+//함수내에서 만들어진 lv는 지역변수이기떄문에 그 지역에서만 사용가능하기때문에 함수밖에서는 사용불가능하다
+    
+    function fscope3(){
+
+        le="limit edition";
+//        var을 변수 앞에 쓰면 그 변수는 로컬 변수(지역 변수)가 된다
+//        만약 쓰지않으면 전역변수가 된다
+        
+    }
+    
+    console.log(vscope);
+    
+    fscope3();
+    
+    console.log(le);
+    
+//var을 함수바깥에서 쓰면 전역변수가 되지만 함수안에서 쓰면 그 함수안에 속해있는 지역변수가 된다
+    
+    
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
