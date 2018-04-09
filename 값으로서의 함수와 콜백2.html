@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+     var numbers=[20,10,9,8,7,6,5,4,3,2,1];
+    
+    console.log(numbers);
+    console.log(numbers.sort());
+
+//    sort()는 함수이고 함수 앞에 .이 있으면 그 앞에는 객체라고 부르고 만약 앞에 것이 객체면
+//    뒤에 것은 함수가 아닌 메소드라고 부른다
+//    즉 함수가 있는데 만약 그 함수가 객체안에 속해있으면 메소드라고 부른다
+    
+    
+
+    var numbers2=[20,10,9,8,7,6,5,4,3,2,1];
+
+    console.log(numbers2);
+
+    function sortfunc(a,b){
+        
+//        console.log(a,b);
+        
+        return a-b;
+
+    }
+    
+    console.log(numbers2.sort(sortfunc));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
