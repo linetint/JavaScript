@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+var o1={val1:1, val2:2, val3:3}
+
+var o2={v1:10, v2:50, v3:100, v4:25}
+    
+    
+//apply나 call 메소드를 사용하는 경우는 첫번째 인자로 넘겨진 객체가 함수 내에서 this로 바인딩된다.
+function sum(){
+    
+    var _sum=0;
+    
+    for(var name in this){
+        
+        _sum=_sum+this[name];
+        
+    }
+    
+    return _sum;
+    
+}
+    
+sum.apply(o1); //6
+sum.apply(o2); //185
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

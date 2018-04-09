@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+    function sum(){
+        
+        var _sum=0;
+        
+// arguments는 자바스크립트가 가지고 있는 특수한 변수명이다
+// arguments는 유사배열(배열과 비슷한 것)으로 사용자가 밑에서 전달한 인자가 배열형태로 들어가있다
+        for(var i=0; i<arguments.length; i++){
+            
+//            console.log(arguments.length);
+            console.log(arguments);
+            
+            
+            document.write(i+":"+arguments[i]+"<br />");
+            _sum=_sum+arguments[i];
+            
+        }
+        
+        return _sum;
+        
+    }
+    
+    document.write("result:"+sum(1,2,3,4));
+    
+//    console.log(arguments);
+
+
+    
+    
+    
+    
+    
+    function subtract(){
+    
+        var _subtract=100;
+        
+        
+//        console.log(arguments);
+//        console.log(arguments[0]);
+//        console.log(arguments[1]);
+//        console.log(arguments[2]);
+    
+        _subtract=_subtract-(arguments[0]+arguments[1]+arguments[2]);
+        
+        return _subtract;
+    }
+    
+    
+//    console.log(subtract);
+    console.log(subtract(10,20,30));
+
+
+    
+
+
+
+
+</script>
+
+</body>
+
+</html>
