@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+function color(input){
+    
+    return{
+        
+        show:function(){
+            console.log(input);
+            return input;
+        },
+        
+        change:function(_input){
+            input=_input;
+        }
+        
+    }
+    
+    
+}
+
+    
+//    console.log(color());
+    
+//    console.log(color('red').show());
+//    console.log(color('blue').show());
+//    console.log(color('green').show());
+    
+    var func_color=color('red');
+    
+//    console.log(red.show());
+
+    func_color.show();
+    func_color.show();
+    func_color.show();
+    
+    console.log(color());
+    console.log(color().change);
+    
+    console.log(func_color);
+    
+    func_color.change('green');
+    
+    func_color.show();
+    
+    func_color.change('yellow');
+    
+    func_color.show();
+    
+    func_color.change('blue');
+    
+    func_color.show();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

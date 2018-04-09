@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+function factory_movie(title){
+    
+    return {
+        
+        get_title:function(){
+            return title;
+        },
+        
+        set_title:function(_title){
+            title=_title;
+        }
+        
+
+    }
+    
+
+}
+
+//console.log(factory_movie('ghost').get_title());
+//console.log(factory_movie().set_title('human'));
+    
+    var ghost=factory_movie('ghost');
+    var matrix=factory_movie('matrix');
+    
+    console.log(ghost);
+    console.log(matrix);
+
+    console.log(ghost.get_title());
+    console.log(matrix.get_title());
+
+    ghost.set_title('고스트');
+    console.log(ghost.get_title());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

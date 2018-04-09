@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+//내부함수에서 외부함수의 지역변수에 접근할수 있다(이것을 클로저라고 한다)
+function outter(){
+    
+    var title="coding";
+    
+    function inner(){
+        
+        console.log(title);
+        
+    }
+    
+    inner();
+    
+}
+    
+outter();
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
