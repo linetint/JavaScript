@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+function Person(){
+    return
+}
+    
+var p0=Person();
+    
+console.log(p0);
+    
+//함수를 호출하는 Person()앞에 만약 new가 있으면 함수라고 부르지 않고 생성자라고 부른다
+//무엇을 생성하냐면 객체를 생성한다
+//쉽게 말해 앞에 new를 붙이면 객체 생성자가 된다
+//앞에 new를 붙이면 Person이라는 이름의 객체를 만드는 것이다
+var p1=new Person();
+
+//console.log(p1);
+
+p1.name="GW";
+    
+p1.introduce=function(){
+    return "MY name is "+this.name;
+}
+
+console.log(p1);
+
+
+    
+var p2=new Person();
+    
+//console.log(p2);
+
+p2.name="GN";
+    
+p2.introduce=function(){
+    return "MY name is "+this.name;
+}
+
+console.log(p2);    
+    
+    
+    
+    
+
+
+
+
+</script>
+
+</body>
+
+</html>

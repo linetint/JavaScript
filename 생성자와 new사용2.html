@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+//이것을 생성자 함수라고 한다(생성자)
+function Person(name){
+    
+//this에는 이 함수의 바깥쪽에 있는 부모를 지명하기때문에 p1과 p2가 들어간다
+    this.name=name;
+    this.introduce=function(){
+        return "MY name is "+this.name;
+    }
+
+}
+
+//즉 Person이라는 함수는 생성자로서 객체에 대한 초기화를 해준다
+//이 생성자가 객체가 어떠한 프로퍼티와 메소드를 가져야하는지에 대해 초기화를 해준다
+//초기화는 기본 세팅이라고 보면 됨
+var p1=new Person("GW");    
+var p2=new Person("GN");
+
+
+console.log(p1);
+console.log(p2);
+    
+    
+console.log(p1.name);
+console.log(p1.introduce());
+    
+console.log(p2.name);
+console.log(p2.introduce());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

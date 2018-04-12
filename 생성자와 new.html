@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var person={};
+    
+person.name="GW";
+    
+person.introduce=function(){
+    
+//  여기서 this는 이 함수가 속해있는 부모를 말하는거니 이 함수보다 바깥에 있는 부모 person을 말한다
+//  즉 this.name은 person.name이라고 볼수 있다
+    return "My name is "+this.name;
+    
+}
+    
+console.log(person);
+console.log(person.introduce());
+    
+    
+//객체를 만드는 또 다른 방법
+//var person2=new Object();
+//    
+//console.log(person2);
+
+
+
+var person2={
+    
+    name:"GN",
+    introduce:function(){
+        return "MY name is "+this.name;
+    },
+    
+}
+
+console.log(person2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
