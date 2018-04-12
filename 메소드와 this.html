@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+//this는 함수내에서 사용되며 그 함수가 속해있는 메소드가 소속되어있는 객체를 말하므로 여기서 o랑 this가 같아지는 것이다
+var o={
+    
+    func:function(){
+        if(o===this){
+            console.log("o===this");
+        }
+    }
+    
+
+}
+
+
+console.log(o);
+    
+o.func();
+    
+    
+var o2=function(){
+    if(o2===this){
+        console.log("o2===this");
+    }else if(o2!==this){
+        console.log("o2!==this")
+    }
+}
+
+console.log(o2);
+
+o2();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

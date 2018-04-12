@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var o={};
+
+var p={};
+
+function func(){
+    
+    
+    
+    
+    
+}
+
+
+
+function sum(x,y){
+    return x+y;
+}
+
+console.log(sum(1,2));
+console.log(sum(2,3));
+
+//그냥 Function()앞에 new를 붙이면 생성자가 만들어진다고 보면 된다
+//앞에껀 인자고 맨 마지막이 본문이 된다
+var sum2=new Function('x','y','z','return x+y+z;');
+    
+console.log(sum2(5,2,7));
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

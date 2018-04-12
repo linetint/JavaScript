@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var o={};
+var p={};
+
+function func(){
+    
+    switch(this){
+            
+        case o:
+            console.log("o");
+            break;
+            
+        case p:
+            console.log("p");
+            break;
+            
+        case window:
+            console.log("window");
+            break;
+            
+    }
+    
+}
+    
+    
+func();
+func.apply(o);
+func.apply(p);
+
+
+//결론:this는 유동적으로 변하며 this가 속해있는 그 함수가 속해있는 객체를 말한다
+//window거나 아니면 함수가 속해있는 객체
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
