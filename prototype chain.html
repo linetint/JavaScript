@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function Ultra(){}
+    
+    Ultra.prototype.ultraProp=true;
+
+    
+    function Super(){}
+    
+    var t=new Super();
+    
+    t.ultraProp=2;
+    
+    Super.prototype=t;
+
+    
+    function Sub(){}
+    
+    var s=new Super();
+    
+    s.ultraProp=3;
+    
+    Sub.prototype=s;
+//    Sub.prototype.ultraProp2=2;
+
+
+    var o=new Sub();
+    
+    console.log(o);
+    
+//    o.ultraProp=77;
+    
+    console.log(o.ultraProp);
+//    console.log(o.ultraProp2);
+
+
+
+//어떠한 객체를 상속받을때는 상속받고자하는 객체의 프로토타입을 사용하면 안되고
+//상속받고자 하는 생성자 함수(객체)를 사용해야한다
+
+
+
+</script>
+
+</body>
+
+</html>

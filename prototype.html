@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+   <meta charset="UTF-8" />
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+//prototype은 객체에 있는 프로퍼티처럼 프로퍼티역할을 하지만 특수한 프로퍼티이다
+    
+    function Ultra(){}
+    
+    Ultra.prototype.ultraProp=true;
+
+    
+    function Super(){}
+    
+    Super.prototype=new Ultra();
+
+    
+    function Sub(){}
+    
+    Sub.prototype=new Super();
+    
+    
+//    console.log(Ultra);
+//    console.log(Super);
+//    console.log(Sub);
+
+
+
+    var o=new Sub();
+    
+    console.log(o);
+    console.log(o.ultraProp);
+
+
+
+//    function color(){}
+//    
+//    color.prototype.name="GW";
+//    
+//    console.log(color);
+//    console.log(color.prototype);
+//    
+//    
+//    
+//    var kkk=new color();
+//    
+//    console.log(kkk);
+    
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
