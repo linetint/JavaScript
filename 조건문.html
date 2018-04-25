@@ -1,44 +1,33 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
 
-   <meta charset="UTF-8" />
-
-</head>
-<body>
-
-<script type="text/javascript">
+  <body>
 
 
-    if(true){
-        console.log("true이면 이것이 보임");
-    }
-    
-    if(false){
-        console.log("false면 보이지 않음");
-    }
+<script>
+
+var input=prompt("숫자를 입력해주세요","");
+
+// console.log(input);
+// console.log(typeof input);
+
+var input_number=Number(input);
+
+console.log(input_number);
+console.log(typeof input_number);
 
 
-//즉 조건문은 if문 안이 true면 실행하고 false면 실행하지 않는다
-    if(true){
-        alert(1);
-        alert(2);
-        alert(3);
-        alert(4);
-    }
-
-    alert(5);
-
-
-
-
-
-
-
-
-
-
-
+if(input_number%2===0){
+  console.log("2의 배수입니다");
+}else if(input_number%3===0){
+  console.log("3의 배수입니다");
+}else{
+  console.log("2의 배수도 3의 배수도 아닙니다");
+}
 
 
 
@@ -46,29 +35,5 @@
 
 
 </script>
-
-</body>
-
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
