@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+var a=1;
+
+function func(b){
+
+  b=2;
+
+}
+
+func(a);
+
+console.log(a); //1
+
+
+
+
+
+var c={id:1};
+
+function func2(d){
+  d={id:2}
+  console.log(d); //{id:2}
+  console.log(d.id); //2
+}
+
+func2(c);
+
+console.log(c.id); //1
+
+
+
+
+var e={id:1};
+
+function func3(f){
+  f.id=2;
+}
+
+func3(e);
+
+console.log(e.id); //2
+
+
+
+// 결국 문자열,숫자,불리언처럼 원시데이터 타입들은 객체같이 쓰이지만 실제로는 원시 데이터 타입형태들이다
+// 원시 데이터 타입들은 a=1 a에 1이 들어있고 그 1을 b=a;에 넣어도 a에 있는 1이 들어가는게 아니라
+// a에 있는 1이 복제되어서 b에 들어간다고 생각하면 된다
+
+// 참조는 원시데이터타입이 아닌 객체에서 일어난다
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

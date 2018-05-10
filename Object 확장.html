@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+
+
+// o라고 하는 객체와 a라고 하는 배열에서 contain이라고 하는 메소드를 쓰기위해서
+// Object에 prototype에 메소드를 추가시켜준다
+
+Object.prototype.contain=function(get_value){
+
+// this에는 이 함수가 속해있는 객체가 들어온다
+// name에는 그 객체에 있는 인덱스나 키값이 들어온다
+    for(var name in this){
+
+        if(this[name]===get_value){
+            return true;
+        }
+    }
+
+    return false;
+
+}
+
+
+
+var o={name:"GW", city:"Seoul"};
+
+console.log(o.contain("Seoul"));
+console.log(o.contain("Busan"));
+
+
+var a=['red','blue','green'];
+
+console.log(a.contain('blue'));
+console.log(a.contain('yellow'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+  </body>
+</html>

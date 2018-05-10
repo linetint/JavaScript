@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+
+
+// o라고 하는 객체와 a라고 하는 배열에서 contain이라고 하는 메소드를 쓰기위해서
+// Object에 prototype에 메소드를 추가시켜준다
+
+Object.prototype.contain=function(get_value){
+
+// this에는 이 함수가 속해있는 객체가 들어온다
+// name에는 그 객체에 있는 인덱스나 키값이 들어온다
+    for(var name in this){
+
+        if(this[name]===get_value){
+            return true;
+        }
+    }
+
+    return false;
+
+}
+
+
+
+var o={name:"GW", city:"Seoul"};
+
+console.log(o.contain("Seoul"));
+console.log(o.contain("Busan"));
+
+
+var a=['red','blue','green'];
+
+console.log(a.contain('blue'));
+console.log(a.contain('yellow'));
+
+
+
+
+
+
+
+// 이러한 Object 확장의 위험성은 모든 객체에 대해 영향을 줄수 있기때문이다
+// 그래서 Object에 어떤 prototype 메소드를 추가한다고 하는것은 신중하게 해야할 일이다
+// Object처럼 광역객체 모든 객체에 영향을 주는 곳에 넣어버리면 모든 객체에 영향을 받기때문에
+// 편리하면서 그만큼 위험해진다
+// 위의 contain메소드는 맨 위의 부모인 Object로부터 상속받은 프로퍼티라고 할수 있다
+
+</script>
+  </body>
+</html>
