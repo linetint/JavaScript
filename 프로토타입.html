@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+// 생성자 함수를 만듬
+// 생성자 함수는 암묵적으로 맨 앞을 대문자로 지정함
+function Student(이름,국어,수학,영어){
+
+  this.이름=이름;
+  this.국어=국어;
+  this.수학=수학;
+  this.영어=영어;
+
+}
+
+Student.prototype.Sum=function(){
+  return this.국어+this.수학+this.영어;
+}
+
+Student.prototype.Average=function(){
+  return (this.국어+this.수학+this.영어)/3;
+}
+
+Student.prototype.toString=function(){
+  return "toString함수";
+}
+
+
+
+console.log(Student.prototype.Sum());
+console.log(Student.prototype.Average());
+console.log(Student.prototype.toString());
+
+
+// 생성자 함수 Student를 앞에 new를 붙여 객체화시킴(인스턴스)
+var stu1=new Student('철수',80,70,90);
+var stu2=new Student('영희',85,80,100);
+var stu3=new Student('보라',70,75,80);
+
+console.log(stu1);
+console.log(stu2);
+console.log(stu3);
+
+console.log(stu1.Sum());
+console.log(stu2.Sum());
+console.log(stu3.Sum());
+
+
+
+
+
+</script>
+
+  </body>
+</html>

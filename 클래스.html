@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+<script>
+
+// 클래스 키워드를 이용해서 클래스 만들기
+class Student{
+
+// 생성자 함수 만든 것처럼 똑같이 만들어주면 된다
+  constructor(이름,국어,수학,영어){
+
+    this.이름=이름;
+    this.국어=국어;
+    this.수학=수학;
+    this.영어=영어;
+
+  }
+
+// prototype과 비슷하지만 class를 이용해서 만든 클래스안에서는 이렇게 메소드를 선언해준다
+  Sum(){
+    return this.국어+this.수학+this.영어;
+  }
+
+  Average(){
+    return (this.국어+this.수학+this.영어)/3;
+  }
+
+  toString(){
+    return "toString함수";
+  }
+
+}
+
+// console.log(Student);
+
+var stu1=new Student('철수',80,70,90);
+var stu2=new Student('영희',75,80,65);
+var stu3=new Student('보라',90,85,100);
+
+console.log(stu1);
+console.log(stu2);
+console.log(stu3);
+
+console.log(stu1.Sum());
+console.log(stu2.Sum());
+console.log(stu3.Sum());
+
+console.log(stu1.Average());
+console.log(stu2.Average());
+console.log(stu3.Average());
+
+console.log(stu1.toString());
+console.log(stu2.toString());
+console.log(stu3.toString());
+
+
+
+
+
+
+
+
+
+
+</script>
+  </body>
+</html>
